@@ -4,8 +4,7 @@ import { Provider } from 'react-redux';
 import Greeting from './Greeting';
 import store from '../redux/configureStore';
 
-const App = () => {
-  return (
+const App = () => (
     <Provider store={store}>
       <BrowserRouter>
         <Routes>
@@ -13,8 +12,7 @@ const App = () => {
         </Routes>
       </BrowserRouter>
     </Provider>
-  );
-};
+);
 
 export default App;
 
